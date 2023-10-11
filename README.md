@@ -9,7 +9,7 @@ O Curso de Desenvolvimento Full Stack da EBAC é um programa abrangente que equi
 ## Estrutura do Repositório
 
 - **Módulo 7**: Praticando formulário.
-- **Lição 02**: Galeria de Imagens com jQuery.
+- **Módulo 9**: Galeria de Imagens com jQuery.
 
 ## Como Navegar
 
