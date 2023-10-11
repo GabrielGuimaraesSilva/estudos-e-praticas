@@ -38,13 +38,14 @@ header {
     padding-bottom: 10px;
     background-color: rgb(222, 222, 222);
     text-align: center;
+    display: none;
 }
 
 #formulario h2 {
     margin-bottom: 10px;
 }
 
-#adicionar {
+#adicionarImagem {
     background-color: rgb(3, 172, 3);
     border: none;
     color: white;
@@ -55,7 +56,7 @@ header {
     cursor: pointer;
 }
 
-#adicionar:hover {
+#adicionarImagem:hover {
     background-color: rgb(4, 216, 4);
 }
 
@@ -82,5 +83,42 @@ header {
     cursor: pointer;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+ul li {
+    max-width: 30%;
+    list-style: none;
+    position: relative;
+    max-height: 280px;
+    overflow-y: hidden;
+    margin: 3px;
+}
+
+ul li img {
+    width: 100%;
+}
+
+.visualizarImagem {
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all ease .3s;
+}
+
+.visualizarImagem a {
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .visualizarImagem {
+    opacity: 1;
+}
 

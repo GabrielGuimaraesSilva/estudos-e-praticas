@@ -15,10 +15,31 @@
     </header>
     <form id="formulario">
         <h2>INSERIR NOVA IMAGEM</h2>
-        <input id="inserirLink" type="text" placeholder="Endereço da Imagem">
-        <button id="adicionar" type="submit">ADICIONAR</button>
+        <input id="inserirLink" type="url" placeholder="Endereço da Imagem" required>
+        <button id="adicionarImagem" type="submit">ADICIONAR</button>
         <button id="cancelar" type="reset">CANCELAR</button>
     </form>
+    <ul>
+        <li>
+            <img src="./image/Imagem1.png" alt="Urso">
+            <div class="visualizarImagem">
+                <a href="./image/Imagem1.png" title="Ver imagem em tamanho real" target="_blank">Visualizar imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./image/Imagem2.png" alt="Urso">
+            <div class="visualizarImagem">
+                <a href="./image/Imagem2.png" title="Ver imagem em tamanho real" target="_blank">Visualizar imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="./image/Imagem3.png" alt="Urso">
+            <div class="visualizarImagem">
+                <a href="./image/Imagem3.png" title="Ver imagem em tamanho real" target="_blank">Visualizar imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
 </body>
