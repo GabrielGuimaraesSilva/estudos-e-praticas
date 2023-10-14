@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 .container {
@@ -16,7 +21,7 @@ header {
     color: white;
 }
 
-header > .container {
+header>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +31,7 @@ header > .container {
 nav {
     background-color: rgb(115, 0, 255);
     padding: 16px 0;
+    display: none;
 }
 
 nav li {
@@ -44,6 +50,7 @@ nav li a {
 
 .menu-hamburguer {
     width: 32px;
+    cursor: pointer;
 }
 
 .menu-hamburguer span {
@@ -58,3 +65,66 @@ nav li a {
     height: 400px;
 }
 
+#sobre .container {
+    display: flex;
+}
+
+#sobre img {
+    width: 50%;
+    height: 50%;
+    margin-right: 24px;
+}
+
+#sobre h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+.lista-veiculos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 16px 0;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.lista-veiculos li button:hover {
+    background-color: #07d173;
+}
+
+.lista-veiculos li strong {
+    margin: 16px 0;
+    display: block;
+}

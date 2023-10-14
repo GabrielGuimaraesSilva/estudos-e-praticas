@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loja de veículos</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
@@ -13,14 +16,14 @@
 <body>
     <header>
         <div class="container">
-            <h1>VeloMotors</h1>
+            <h1>VELO Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
         </div>
-        <nav>
+        <nav id="opcoes">
             <div class="container">
                 <ul>
                     <li>
@@ -44,6 +47,95 @@
         <img src="./image/carro2.png" alt="Ferrari Vermelha">
         <img src="./image/carro3.png" alt="Ferrari Azul">
     </div>
+    <section id="sobre">
+        <div class="container">
+            <img src="./image/concessionaria.png" alt="Imagem da loja Velo Motors">
+            <div>
+                <h2>Sobre a VELO Motors</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et vitae libero eligendi accusamus quis
+                    beatae possimus, necessitatibus natus facilis ex ratione quae ipsam voluptatum rem repudiandae
+                    distinctio facere suscipit! Unde!
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et vitae libero eligendi accusamus quis
+                    beatae possimus, necessitatibus natus facilis ex ratione quae ipsam voluptatum rem repudiandae
+                    distinctio facere suscipit! Unde!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="lista-veiculos">
+                <li>
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Promoções</h2>
+            <ul class="lista-veiculos">
+                <li>
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+                <li>
+                    <img src="./image/carro-bmw.png" alt="Carro da BMW">
+                    <h3>Carro BMW</h3>
+                    <p>
+                        Câmbio automático, 4 portas vidros e travas elétricas
+                    </p>
+                    <strong>R$ 75.000,00</strong>
+                    <button type="button">Tenho interesse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -53,6 +145,11 @@
             $('#carousel-imagens').slick({
                 autoplay: true
             });
+
+            $('.menu-hamburguer').click(function () {
+                $('#opcoes').slideToggle();
+            });
+
         });
     </script>
 </body>
