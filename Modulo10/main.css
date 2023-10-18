@@ -124,7 +124,12 @@ section {
     background-color: #07d173;
 }
 
-.lista-veiculos li strong {
+.price {
     margin: 16px 0;
     display: block;
+}
+
+.price del {
+    color: rgb(156, 156, 156);
+    font-size: 14px;
 }
