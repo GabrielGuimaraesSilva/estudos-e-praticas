@@ -93,6 +93,7 @@ section {
 .lista-veiculos {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 15px;
 }
 
 .lista-veiculos li {
